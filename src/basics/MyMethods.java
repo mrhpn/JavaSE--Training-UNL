@@ -7,6 +7,9 @@ public class MyMethods {
 	public static void main(String[] args) {
 		System.out.println(a);
 		System.out.println(Employee.count);
+		
+		Employee employee = new Employee();
+		System.out.println("Employee salary: " + employee.getSalary());
 	}
 	
 	void sayHello() {
