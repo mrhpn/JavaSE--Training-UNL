@@ -116,7 +116,7 @@ public class MyString {
 		System.out.println(sb.length());
 		sb.insert(1, "abc");
 		sb.reverse();
-		sb.replace(5, 12, "evening")
+		sb.replace(5, 12, "evening");
 		System.out.println(sb.toString());
 		
 	}
