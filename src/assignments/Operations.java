@@ -48,6 +48,15 @@ public class Operations {
 		this.operand2 = operand2;
 	}
 	
+//	public Operations(double operand2, double operand1) {
+//		//
+//	}
+//	
+//	// static factory method
+//	public static Operations doOperations() {
+//		return new Operations();
+//	}
+	
 	public double add() {
 		return operand1 + operand2;
 	}

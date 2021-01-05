@@ -29,6 +29,8 @@ public class MyConstructor {
 		Vehicle vehicle = new Vehicle(10_000_000, "Tesla", "red");
 		Vehicle vehicle1 = new Vehicle(40_000_000, "Ford", "red");
 		
+		Vehicle vehicle2 = new Vehicle();
+		
 		System.out.println(vehicle.color);
 		System.out.println(vehicle.model);
 		System.out.println(vehicle.price);
