@@ -37,6 +37,58 @@ public class CodingConventions {
 	 * ---------------
 	 * 1. Object type conversion - toType eg. toString
 	 * 2. Static Factory Methods - valueOf, of, getInstance, newInstance, getType, newType
+	 * 
+	 * PROGRAM STRUCTURE
+	 * -----------------
+	 * CLASS ORGANIZATION
+	 * 
+	 * 1. Variables
+	 * 	a. static
+	 *  b. instance variables
+	 * 2. Static Initializers
+	 * 3. Nested static classes
+	 * 4. Static methods
+	 * 5. Instance Initializers (Works before constructor)
+	 * 6. Constructor
+	 * 7. Nested instance classes
+	 * 8. Methods
+	 * 
+	 * Class Size
+	 * ----------
+	 * S Principal (Single Responsibility Principal)
+	 *  - helps to get better abstractions
+	 *  - helps to get few lines of code
+	 * Must be between 25000 and 1200
+	 * 
+	 * Methods
+	 * -------
+	 * - small and focused (single responsibility)
+	 * - refactor long methods
+	 * 		- code reuse
+	 * 		- clean and readable code
+	 * - group methods with simpler functionality
+	 * 
+	 * Local Variables
+	 * ---------------
+	 * - declare where its first use
+	 * 
+	 * Lines
+	 * -----
+	 * - no more than 80 cols, and wrap
+	 * - break line after comma; e.g: methods calls and declarations
+	 * - break before operators; e.g: if blocks, arithmetic operations
+	 * 
+	 * Comments
+	 * --------
+	 * - code overview
+	 * - non-obvious design decision
+	 * - don't write them frequently (caused poor code quality)
+	 * 
+	 * Comments Types
+	 * --------------
+	 * - implementation comments (//, /* --- star/)
+	 * - documentation comments /** --- /
+	 * 
 	 *
 	 */
 }
