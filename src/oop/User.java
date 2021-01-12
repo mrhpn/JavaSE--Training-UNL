@@ -10,6 +10,11 @@ public class User {
 		System.out.println("Inside user constructor");
 	}
 	
+	// Polymophrism test
+	public void printRoleName() {
+		System.out.println("Role user");
+	}
+	
 	public void login() {
 		System.out.println("Logged in.");
 	}
