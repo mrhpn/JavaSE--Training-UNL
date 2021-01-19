@@ -2,7 +2,7 @@ package oop.abstract_test;
 
 public class AbstractCat {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CloneNotSupportedException {
 		// Animal animal = new Animal(); // can't instancitate abstract class
 		
 		// available constructors
@@ -19,6 +19,14 @@ public class AbstractCat {
 	
 		Owner catOwner = new Cat("Brown"); // polymorphism
 		System.out.println(catOwner.ownerName()); // calling interface's methods
+		
+		Owner catOwner1 = new Cat(null);
+		
+		Owner catOwnerClone = ((Cat)catOwner1).clone();
+		
+		if (catOwnerClone != catOwner) {
+			System.out.println("haha");
+		}
 	}
 	
 	

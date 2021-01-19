@@ -1,14 +1,14 @@
 package oop.abstract_test;
 
-public class Cat extends Animal implements Owner {
+public class Cat extends Animal implements Owner, Cloneable {
 
 	public Cat(String color) {
 		super(color);
 	}
-
-	public static void main(String[] args) {
-		
-
+	
+	@Override
+	protected Owner clone() throws CloneNotSupportedException {
+		return (Owner) super.clone();
 	}
 
 	@Override

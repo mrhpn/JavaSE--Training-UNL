@@ -2,6 +2,7 @@ package oop.abstract_test;
 
 /**
  * Interface (used to get abstract concept, to achieve multiple inheritance)
+ * < Interface also has inheritance. One interface can extend another interface >
  * =========
  * 1. 
  * 2. abstract members
@@ -11,7 +12,7 @@ package oop.abstract_test;
  * 6. can't use private and protected
  *
  */
-public interface Owner {
+public interface Owner extends Race {
 	// constants variables
 	String OWNER_RACE = "Human";
 	
