@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayListTest {
@@ -20,6 +21,10 @@ public class ArrayListTest {
 		System.out.println(countryList);
 		System.out.println(countryList.contains("USA"));
 		System.out.println(countryList.indexOf("Thailand"));
+		
+		Collections.sort(countryList);
+		Collections.shuffle(countryList);
+		Collections.reverse(countryList);
 		
 		List<String> moreCountries = new ArrayList<String>();
 		moreCountries.add("Brizal");
