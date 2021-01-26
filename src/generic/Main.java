@@ -28,6 +28,16 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		
+		// max
+		System.out.printf("Max Value of %d, %d, %d, %d is %d ", 20, 30, 39, 40, max(20, 40, 30, 50));
+		System.out.println();
+		System.out.printf("Max Value of %s, %s, %s, %s is %s ", "orange", "apple", "banana", "mango", max("orange", "apple", "banana", "mango"));
+		System.out.println();
+		
+		// min
+		System.out.printf("Min Value of %d, %d, %d, %d is %d ", 20, 30, 39, 40, min(20, 40, 30, 50));
+		System.out.println();
+		
 		// Generic Bounded Method Test
 		//----------------------------
 		Integer[] intArray = {1, 2, 3, 4, 5};
@@ -63,6 +73,42 @@ public class Main {
 		for(E element : elements) {
 			System.out.print(element + " ");
 		}
+	}
+	
+	public static <T extends Comparable<T>> T max(T x, T y, T w, T z) {
+		T max = x;
+		
+		if (y.compareTo(max) > 0) {
+			max = y;
+		}
+		
+		if (w.compareTo(max) > 0) {
+			max = w;
+		}
+		
+		if (z.compareTo(max) > 0) {
+			max = z;
+		}
+		
+		return max;
+	}
+	
+	public static <T extends Comparable<T>> T min(T x, T y, T w, T z) {
+		T min = x;
+		
+		if (y.compareTo(min) < 0) {
+			min = y;
+		}
+		
+		if (w.compareTo(min) < 0) {
+			min = w;
+		}
+		
+		if (z.compareTo(min) < 0) {
+			min = z;
+		}
+		
+		return min;
 	}
 
 }

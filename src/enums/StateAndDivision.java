@@ -1,0 +1,19 @@
+package enums;
+
+public enum StateAndDivision {
+	YANGON,
+	MANDALAY,
+	AYEYARWADY,
+	BAGO,
+	NAYPYITAW,
+	MAGWAY,
+	TANINTHARYI,
+	SAGING,
+	KACHIN,
+	KAYIN,
+	KAYAR,
+	SHAN,
+	MON,
+	RAKHINE,
+	CHIN
+}
